@@ -5,11 +5,12 @@ public class Page {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected Error error;
 
     public Page(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
+        error = new Error(driver, wait);
     }
 
-    protected Error error = new Error(driver, wait);
 }
