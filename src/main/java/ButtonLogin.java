@@ -8,8 +8,7 @@ public class ButtonLogin extends Button {
     private WebDriverWait wait;
 
     public ButtonLogin(WebDriver driver, WebDriverWait wait) {
-        this.driver = driver;
-        this.wait = wait;
+        super(driver, wait);
     }
 
     private By loginButton = By.cssSelector("button.loginbtn");
