@@ -30,7 +30,6 @@ public class PageComponent {
         try{
             wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         } catch (TimeoutException e) {
-//            fail("The element: "+ locator + " was not visible");
             System.out.println("The element was not found");
             throw e;
         }
