@@ -46,8 +46,6 @@ public class TestLogin {
     @Test
     public void checkInvalidEmailErr() {
         onLoginPage.closePopup();
-        // 4th question: if I run both tests I don't need this. If I run only second test I need to close the popup. Add IF here?
-
         onLoginPage.clickForgetPassword();
         onLoginPage.typeInvalidEmail("dragon@gmail.com");
         onLoginPage.clickResetButton();
