@@ -4,10 +4,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class InputPassword extends InputField {
 
-    public  InputPassword (WebDriver webDriver, WebDriverWait wait) {
+    public  InputPassword (WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
         locator = By.name("password");
     }
-}
-
 }
