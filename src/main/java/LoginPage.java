@@ -45,7 +45,8 @@ public class LoginPage extends Page {
         inputResetEmail.typeText(invalidEmail);
     }
 
-    public void clickResetButton() {buttonReset.click();
+    public void clickResetButton() {
+        buttonReset.click();
     }
 
     public void verifyInvalidEmailErrorIs(String message) {
